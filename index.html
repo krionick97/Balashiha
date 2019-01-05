@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400" rel="stylesheet">
+  <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>Балашиха Хлеб</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <img src="img/header-logo.png" alt="Logo" class="header__logo">
+      <div class="header__flex-box">
+        <div class="header__text">
+          <h2 class="header__title">Балашиха Хлеб</h2> <!--Title-->
+          <p class="header__paragraph">Хлебобулочные и кондитерские изделия</p>
+        </div> <!--Text-->
+        <div class="header__contacts">
+          <h2 class="header__phonenumber">
+            <span class="header__phonenumber-code">8(495)</span><span class="header__phonenumber-tel">777-11-00</span>
+          </h2>
+          <a href="tel:84957771100" class="header__phone-link"><i class="fa fa-phone" aria-hidden="true"></i> &rarr; <span>Перезвоните мне!</span></a>
+        </div> <!--Header Contacts-->
+      </div> <!--Flex box-->
+    </div> <!--Container-->
+  </header> <!--Header-->
+  <!--///////////////////////////////////////////////////////////////////-->
+  
+  <section class="main-screen">
+    <div class="main-screen__upper-text">
+      <h1 class="main-screen__upper-text--title">Уникальные коммерческие условия</h1>
+      <h2 class="main-screen__upper-text--subtitle">по поставкам хлебобулочных и кандитерских изделий от крупнейшего хлебзавода в МО</h2>
+    </div> <!--Upper Text-->
+    <div class="container main-screen__container">
+      <div class="main-screen__medals">
+      </div> <!--Medals-->
+
+      <div class="main-screen__form-block">
+        <div class="main-screen__form">
+          <h2 class="main-screen__form--title">Получите персональное<br><span>коммерческое предложение</span></h2>
+          <form method="POST" id="form" class="form form-1">
+            <div class="input input-name">
+              <input type="text" required name="user_name" placeholder="Ваше имя">
+              <img src="img/input-icon-user.png" alt="User" class="input-icon">        
+            </div>
+            <div class="input input-email">
+              <input type="email" required name="user_email" placeholder="Ваш e-mail">        
+              <img src="img/input-icon-email.png" alt="E-mail" class="input-icon">
+            </div>
+            <div class="input input-phone">
+              <input type="tel" required name="user_phone" placeholder="Ваш номер телефона" id="phone">        
+              <img src="img/input-icon-phone.png" alt="Phone" class="input-icon">
+            </div>
+          </form>
+          <button class="btn btn__form" form="form" type="submit">Получить КП!</button>
+          <div class="main-screen__form--lower-text">
+            <img src="img/seif.png" alt="Seif">
+            <p>Ваши данные не будут переданны третьим лицам, согласно законам РФ</p>
+            <img src="img/seif.png" alt="Seif">
+          </div> <!--Lower Text-->
+        </div> <!--Form-->
+        <img src="img/form-shadow.png" alt="form-shadow" class="main-screen__form-block--shadow">
+      </div> <!--Form Block-->
+    </div> <!--Container-->
+    
+  </section> <!--Main Screen-->
+  <!--///////////////////////////////////////////////////////////////////-->
+
+
+
+
+
+
+
+
+
+</body>
+</html>

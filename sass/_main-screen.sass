@@ -1,0 +1,68 @@
+.main-screen
+  padding: 55px 0 72px
+  // position: relative
+  background-image: url(../img/main-screen-bg.png)
+  background-repeat: no-repeat
+  // height: 50rem
+  background-size: 140rem
+  background-position: top
+  background-position-y: 18rem
+  &__upper-text
+    text-align: center
+    // +rob_reg
+    +rob_cond_reg
+    margin-bottom: 50px
+    &--title
+      font-size: 4.6rem
+      text-transform: uppercase
+      font-stretch: extra-condensed
+      color: $color-red-dark
+      margin-bottom: 1.5rem
+      font-weight: 600
+    &--subtitle
+      text-transform: uppercase
+      font-size: 2rem
+      font-stretch: extra-condensed
+      font-weight: 600
+  &__form-block
+    display: inline-block
+    position: relative
+    z-index: 1
+    &--shadow
+      position: absolute
+      width: 114%
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+      z-index: -1
+
+  &__form
+    background-color: $color-red
+    background-repeat: no-repeat
+    color: $color-white
+    padding: 3rem
+    border: 0.5rem solid $color-white-2
+    display: inline-block
+    width: 25rem
+    &--title
+      // +rob_reg
+      +rob_cond_reg
+      text-align: center
+      text-transform: uppercase
+      font-size: 2.1rem
+      margin-bottom: 2.3rem
+      font-stretch: extra-condensed
+      span
+        font-size: 1.8rem
+    &--lower-text
+      display: flex
+      align-items: center
+    &--lower-text > p
+      text-align: center
+      font-size: 1.1rem
+  &__form > .form > .input > input
+    margin-bottom: 0.6rem
+  &__form > button
+    margin-top: 0.8rem
+    margin-bottom: 1.2rem
+  

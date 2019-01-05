@@ -1,0 +1,28 @@
+@import 'fonts'
+@import 'mixins'
+@import 'variables'
+  
+// .font
+//   font-size: 24px
+//   &-1
+//     +rob_reg
+//   &-2
+//     +rob_light
+//   &-3
+//     +rob_cond_reg
+//   &-4
+//     +nokia_sans
+
+html
+  font-size: 10px
+body
+  +rob_light
+  font-size: 1.5rem
+  color: $color-black
+.container
+  max-width: 1000px
+  margin: 0 auto
+
+@import 'header'
+@import 'main-screen'
+@import 'interface'

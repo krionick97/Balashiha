@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'Roboto Regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed Regular';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nokia Sans S60 Bold';
+  src: url("../fonts/NokiaSansS60-Bold.eot");
+  src: url("../fonts/NokiaSansS60-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/NokiaSansS60-Bold.woff") format("woff"), url("../fonts/NokiaSansS60-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  padding: 2rem 0 2rem;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__text {
+  margin-left: 14.3rem;
+}
+
+.header__title {
+  text-transform: uppercase;
+  font-family: 'Nokia Sans S60 Bold';
+  font-size: 2.4rem;
+}
+
+.header__flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__paragraph {
+  text-transform: lowercase;
+  font-size: 1.1rem;
+  color: #f64747;
+}
+
+.header__phonenumber {
+  font-family: 'Roboto Regular', sans-serif;
+  margin-bottom: 6px;
+}
+
+.header__phonenumber-code {
+  font-size: 1.8rem;
+}
+
+.header__phonenumber-tel {
+  font-size: 2.1rem;
+}
+
+.header__phone-link {
+  color: #f64747;
+  font-size: 1.4rem;
+  text-decoration: none;
+  outline: none;
+}
+
+.header__phone-link span {
+  border-bottom: 1px dashed #f64747;
+}
+
+.main-screen {
+  padding: 55px 0 72px;
+  background-image: url(../img/main-screen-bg.png);
+  background-repeat: no-repeat;
+  background-size: 140rem;
+  background-position: top;
+  background-position-y: 18rem;
+}
+
+.main-screen__upper-text {
+  text-align: center;
+  font-family: 'Roboto Condensed Regular', sans-serif;
+  margin-bottom: 50px;
+}
+
+.main-screen__upper-text--title {
+  font-size: 4.6rem;
+  text-transform: uppercase;
+  font-stretch: extra-condensed;
+  color: #7d3803;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.main-screen__upper-text--subtitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-stretch: extra-condensed;
+  font-weight: 600;
+}
+
+.main-screen__form-block {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.main-screen__form-block--shadow {
+  position: absolute;
+  width: 114%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+}
+
+.main-screen__form {
+  background-color: #f64747;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 3rem;
+  border: 0.5rem solid #fdf1cf;
+  display: inline-block;
+  width: 25rem;
+}
+
+.main-screen__form--title {
+  font-family: 'Roboto Condensed Regular', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  margin-bottom: 2.3rem;
+  font-stretch: extra-condensed;
+}
+
+.main-screen__form--title span {
+  font-size: 1.8rem;
+}
+
+.main-screen__form--lower-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-screen__form--lower-text > p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.main-screen__form > .form > .input > input {
+  margin-bottom: 0.6rem;
+}
+
+.main-screen__form > button {
+  margin-top: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.input {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.1rem;
+  -webkit-transform: translateY(42%);
+          transform: translateY(42%);
+  margin-right: 1.5rem;
+  opacity: 0.6;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.input input {
+  padding: 1.5rem 1.8rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.input input:focus {
+  border-bottom: -0.2rem solid #9c9c9c;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.input input:focus + .input-icon {
+  opacity: 1;
+}
+
+.btn__form {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#13efcb), to(#03c9a9));
+  background-image: linear-gradient(#13efcb, #03c9a9);
+  background-color: #03c9a9;
+  width: 100%;
+  border-radius: 0.3rem;
+  border: none;
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  padding: 2.3rem 0;
+  outline: none;
+}
+
+.btn:active {
+  -webkit-box-shadow: inset 0.1rem 0.1rem 0.5rem rgba(51, 51, 51, 0.6);
+          box-shadow: inset 0.1rem 0.1rem 0.5rem rgba(51, 51, 51, 0.6);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

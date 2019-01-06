@@ -106,12 +106,21 @@ body {
 }
 
 .main-screen {
-  padding: 55px 0 72px;
+  padding: 6.5rem 0 7.2rem;
   background-image: url(../img/main-screen-bg.png);
   background-repeat: no-repeat;
   background-size: 140rem;
   background-position: top;
   background-position-y: 18rem;
+}
+
+.main-screen__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .main-screen__upper-text {
@@ -150,6 +159,64 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
+}
+
+.main-screen__medals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.main-screen__medals--item {
+  width: 22rem;
+  height: 22rem;
+  background-image: url(../img/medal-png.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -1.5rem;
+  margin-bottom: -1.8rem;
+  position: relative;
+}
+
+.main-screen__medals--item:after {
+  position: absolute;
+  content: '';
+  height: 6.5rem;
+  width: 18rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -4.8rem;
+  background-image: url(../img/medal-mirror.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-screen__medals--text {
+  font-family: 'Roboto Condensed Regular', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.16;
+  top: 50%;
+  max-width: 14.6rem;
+  font-stretch: condensed;
+  font-weight: 600;
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
 }
 
 .main-screen__form {

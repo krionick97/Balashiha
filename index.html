@@ -7,11 +7,9 @@
   <link rel="stylesheet" href="css/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400" rel="stylesheet">
   <link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/script.js"></script>
   <title>Балашиха Хлеб</title>
 </head>
 <body>
@@ -37,7 +35,7 @@
   <section class="main-screen">
     <div class="main-screen__upper-text">
       <h1 class="main-screen__upper-text--title">Уникальные коммерческие условия</h1>
-      <h2 class="main-screen__upper-text--subtitle">по поставкам хлебобулочных и кандитерских изделий от крупнейшего хлебзавода в МО</h2>
+      <h2 class="main-screen__upper-text--subtitle">по поставкам хлебобулочных и кондитерских изделий от крупнейшего хлебзавода в МО</h2>
     </div> <!--Upper Text-->
     <div class="container main-screen__container">
       <div class="main-screen__medals">
@@ -65,7 +63,7 @@
               <img src="img/input-icon-email.png" alt="E-mail" class="input-icon">
             </div>
             <div class="input input-phone">
-              <input type="tel" required name="user_phone" placeholder="Ваш номер телефона" id="phone">        
+              <input type="tel" required name="user_phone" placeholder="Ваш номер телефона">        
               <img src="img/input-icon-phone.png" alt="Phone" class="input-icon">
             </div>
           </form>
@@ -83,6 +81,33 @@
   </section> <!--Main Screen-->
   <!--///////////////////////////////////////////////////////////////////-->
 
+  <section class="photo-slider">
+    <h2 class="section-title photo-slider__title">
+      Фотографии нашего завода<br>
+      <img src="img/photo-selector-icon.png" alt="Icon">
+    </h2>
+    <div class="container photo-slider__container">      
+      <div class="photo-slider__box">
+        <div class="photo-slider__slider">
+          <div class="photo-slider__slider-img"><img src="img/photo-slider/slider-img-1.jpeg" alt=""></div> <!--Image Box-->
+          <div class="photo-slider__slider-img"><img src="img/photo-slider/slider-img-2.jpeg" alt=""></div> <!--Image Box-->
+          <div class="photo-slider__slider-img"><img src="img/photo-slider/slider-img-3.jpeg" alt=""></div> <!--Image Box-->
+          <div class="photo-slider__slider-img"><img src="img/photo-slider/slider-img-4.jpeg" alt=""></div> <!--Image Box-->
+          <div class="photo-slider__slider-img"><img src="img/photo-slider/slider-img-5.jpeg" alt=""></div> <!--Image Box-->
+        </div>
+        <img src="img/photo-slider/slider-shadow.png" alt="Shadow" class="photo-slider__shadow">
+      </div> <!--Slider Box-->
+      <div class="photo-slider__text">
+        <p class="photo-slider__paragraph">
+          Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.
+        </p>
+        <p class="photo-slider__paragraph">
+          Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края. А это – более 100 видов хлебобулочных изделий, которые ежедневно попадают на стол наших покупателей.
+        </p>
+      </div> <!--Text-->
+    </div> <!--Container---->
+  </section> <!--Photo selector-->
+  <!--///////////////////////////////////////////////////////////////////-->
 
 
 
@@ -90,6 +115,9 @@
 
 
 
-
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

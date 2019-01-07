@@ -9,6 +9,5 @@ $(document).ready(function () {
     nextArrow: '<div class="arrow arrow-prev"></div>',
     prevArrow: '<div class="arrow arrow-next"></div>',
     dotsClass: 'dots'
-    // dots: 'dots'
   });
 });

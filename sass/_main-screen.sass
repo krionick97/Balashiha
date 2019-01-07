@@ -1,9 +1,7 @@
 .main-screen
   padding: 6.5rem 0 7.2rem
-  // position: relative
   background-image: url(../img/main-screen-bg.png)
   background-repeat: no-repeat
-  // height: 50rem
   background-size: 140rem
   background-position: top
   background-position-y: 18rem
@@ -109,4 +107,76 @@
   &__form > button
     margin-top: 0.8rem
     margin-bottom: 1.2rem
-  
+
+  //Responsive
+@media (max-width: 1420px)
+  .main-screen
+    background-size: 124rem
+    // background-position: top
+    // background-position-y: 18rem
+@media (max-width: 1200px)
+  .main-screen
+    background-size: 110rem
+@media (max-width: 1060px)
+  .main-screen
+    background-size: 90rem
+    &__upper-text
+      max-width: 90%
+      margin: 0 auto 5rem
+      &--subtitle
+        line-height: 1.44
+    &__container
+      max-width: 90%
+      flex-direction: column
+      align-items: center
+    &__medals
+      margin-bottom: 6rem
+      flex-wrap: wrap
+      align-items: center
+      &--item
+        margin: 0 auto
+        &:not(:last-child)
+          margin-bottom: 0 au
+        &:after
+          display: none
+@media (max-width: 920px)
+  .main-screen
+    background-size: 80rem
+@media (max-width: 810px)
+  .main-screen
+    background-size: 70rem
+@media (max-width: 580px)
+  .main-screen
+    background-size: 50rem
+    &__upper-text
+      &--title
+        font-size: 3.8rem
+        line-height: 1.2
+      &--subtitle
+        font-size: 1.6rem
+    &__medals
+      margin-bottom: 4rem
+
+@media (max-width: 480px)
+  .main-screen
+    background-image: none
+    &__upper-text
+      &--title
+        font-size: 3.2rem
+      &--subtitle
+        font-size: 1.6rem
+@media (max-width: 420px)
+  .main-screen
+    &__upper-text
+      &--title
+        font-size: 2.4rem
+      &--subtitle
+        font-size: 1.4rem
+@media (max-width: 380px)
+  .main-screen
+    &__form-block
+      &--shadow
+        display: none
+
+
+

@@ -1,0 +1,27 @@
+.about
+  background-color: $color-white-2
+  padding: 4.5rem 5rem
+  background-image: url(../img/about/about-bg.png)
+  background-repeat: no-repeat
+  background-position: bottom
+  &__paragraph
+    font-size: 1.5rem
+    line-height: 1.4
+    display: block
+    margin-bottom: 3rem
+    &--1
+      +rob_reg
+      font-weight: 400
+      margin: 1.2rem 0 1.2rem
+      display: block
+  &__video-box
+    // text-align: center
+    display: block
+    margin: 0 auto
+  &__video
+    margin: 0 auto
+
+@media (max-width: 420px)
+  .about
+    &__video
+      max-width: 100%
